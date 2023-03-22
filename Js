@@ -1,0 +1,14 @@
+let foo;
+console.log(foo);
+
+let obj = {};
+console.log(obj.prop);
+
+let bar = null;
+console.log(bar);
+
+console.log(typeof null);
+console.log(typeof undefined);
+
+console.log(null == undefined);
+console.log(null === undefined);

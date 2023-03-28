@@ -7,3 +7,7 @@ for(let i = 0; i<fruits.length; i++){
 fruits.forEach(function(f){
     console.log(f);
 })
+
+for(const f of frutis){
+    console.log(f);
+}

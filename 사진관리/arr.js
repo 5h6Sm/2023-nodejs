@@ -8,7 +8,6 @@ arr.forEach(function(data, index){
 //     return data === 'cherry';
 // })
 
-
 // return 값이 true에 해당한느 idx 반환, 없으면 -1 반환
 const cherryIndex = arr.findIndex(data => data === 'cherry')
 

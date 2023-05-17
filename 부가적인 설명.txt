@@ -1,0 +1,13 @@
+{
+  "name": "2023-node",
+  "version": "1.0.0",
+  "description": "삼미웹정",
+  "main": "(index.js)",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
+
+package.json에서

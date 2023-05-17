@@ -18,9 +18,10 @@ const server = http.createServer(function(req, res){
         ejs.renderFile(path.join(__dirname, 'template', 'index.ejs'),
         {name:index.name, here : index.here} //ejs 인자 전달\
         //데이터를 넘겨받은 ejs 코드(data)를 클라이언트에게 보낸다.
-        , function(err, data){
-            res.end(data);
-        });
+    ). then((data)=> res.end(data));
+        // function(err, data){
+        //     res.end(data);
+        // }
 
     }else if(req.url=='/food'){
         fs.createReadStream(path.join(__dirname, 'html', 'food.html')).pipe(res);

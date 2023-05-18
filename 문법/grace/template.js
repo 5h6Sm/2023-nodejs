@@ -8,6 +8,7 @@ const index = {
     food2 : '미역국',
     food3 : '음료수'
 };
+const food = ['내가 만든 쿠키', '미역국', '음료수'];
 
 const server = http.createServer(function(req, res){
     // console.log(req.method);
@@ -17,7 +18,7 @@ const server = http.createServer(function(req, res){
         // fs.createReadStream(path.join(__dirname, 'html', 'index.html')).pipe(res);
         //renderfile(ejs대상경로, ejs에 넘겨줄 데이터, 이후에 실행할 callback함수)
         ejs.renderFile(path.join(__dirname, 'template', 'index.ejs'),
-        {food1,food2,food3} //ejs 인자 전달\
+        {food} //ejs 인자 전달\
         //데이터를 넘겨받은 ejs 코드(data)를 클라이언트에게 보낸다.
     ). then((data)=> res.end(data));
         // function(err, data){
